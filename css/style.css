@@ -14,14 +14,18 @@ a {
 }
 
 .user-navigation,
-.basket {
-	line-height: 30px;
-	color: #000000;
+ .basket {
 	list-style: none
 }
 
-.user-navigation,
-.basket:hover {
+.user-navigation a,
+.basket a {
+	line-height: 30px;
+	color: #000000;	
+}
+
+.user-navigation a:hover,
+.basket a:hover {
 	color: #fb565a;
 }
 
