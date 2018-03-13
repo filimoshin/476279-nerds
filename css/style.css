@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;  
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-navigation,
+.basket {
+	line-height: 30px;
+	color: #000000;
+	list-style: none
+}
+
+.user-navigation,
+.basket:hover {
+	color: #fb565a;
+}
+
+.services-caption {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000
+}
+
+.btn {
+	line-height: 18px;
+	color: #ffffff
+}
+
+.friendship-bold {
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.friendship p {
+	line-height: 22px;
+	color: #444444;
+}
+
