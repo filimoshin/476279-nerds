@@ -25,8 +25,42 @@ a {
 }
 
 .user-navigation a:hover,
-.basket a:hover {
+.basket a:hover,
+.user-navigation a:focus,
+.basket a:focus {
 	color: #fb565a;
+}
+
+.services-list {
+	list-style: none
+}
+
+.web-sites-btn {
+	background-color: #fb565a;
+	
+}
+
+.web-sites-btn:hover,
+.web-sites-btn:focus {
+	background-color: #e74246
+}
+
+.apps-btn {
+	background-color: #00ca74
+}
+
+.apps-btn:hover,
+.apps-btn:focus {
+	background-color: #00bc6c
+}
+
+.presentations-btn {
+	background-color: #efc84a
+}
+
+.presentations-btn:hover,
+.presentations-btn:focus {
+	background-color: #eab534
 }
 
 .services-caption {
@@ -37,12 +71,14 @@ a {
 
 .btn {
 	line-height: 18px;
+	font-weight: 500;
 	color: #ffffff
 }
 
 .friendship-bold {
 	font-size: 36px;
 	line-height: 36px;
+	font-weight: 700;
 	color: #000000;
 }
 
@@ -50,4 +86,36 @@ a {
 	line-height: 22px;
 	color: #444444;
 }
+
+.modal-caption {
+	font-size: 45px;
+	line-height: 45px
+}
+
+.write-us-form label {
+	line-height: 18px
+}
+
+.filter fieldset {
+	border: none;	
+}
+
+.filter-legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.filter-list {
+	list-style: none
+}
+
+.filter-option label {
+	line-height: 20px
+}
+
+.filter-option label:hover {
+	color: #000;
+}
+
 
