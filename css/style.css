@@ -13,15 +13,61 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: -1px;
+	left: -1px;
+	font-size: 0;
+	opacity: 0;
+}
+
 .user-navigation,
  .basket {
 	list-style: none
 }
 
+.main-header {
+	background-color: #eeeeee;
+	padding-top: 49px;
+	margin-bottom: 80px;
+}
+
+.wrapper {
+	width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.user-navigation {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+.user-navigation li {
+	margin: 0;
+	padding-right: 47px;
+}
+
+.user-navigation li:last-child {
+	padding-right: 0;
+}
+
 .user-navigation a,
 .basket a {
 	line-height: 30px;
-	color: #000000;	
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .user-navigation a:hover,
@@ -31,13 +77,68 @@ a {
 	color: #fb565a;
 }
 
+.user-navigation a:active,
+.basket a:active {
+	opacity: 0.3;
+}
+
 .services-list {
-	list-style: none
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.services-caption {
+	margin: 0;
+	margin-bottom: 18px;
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.services-list-item img {
+	margin-bottom: 20px;
+}
+
+.services-list-item p {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.services {
+	width: 1100px;
+	margin-bottom: 80px;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .web-sites-btn {
 	background-color: #fb565a;
-	
+	padding: 15px 40px;
+	border-radius: 3px;	
+}
+
+.apps-btn {
+	background-color: #00ca74;
+	padding: 15px 40px;
+	border-radius: 3px;
+}
+
+.presentations-btn {
+	background-color: #efc84a;
+	padding: 15px 40px;
+	border-radius: 3px;
 }
 
 .web-sites-btn:hover,
@@ -45,17 +146,9 @@ a {
 	background-color: #e74246
 }
 
-.apps-btn {
-	background-color: #00ca74
-}
-
 .apps-btn:hover,
 .apps-btn:focus {
 	background-color: #00bc6c
-}
-
-.presentations-btn {
-	background-color: #efc84a
 }
 
 .presentations-btn:hover,
@@ -63,34 +156,249 @@ a {
 	background-color: #eab534
 }
 
-.services-caption {
-	font-size: 24px;
-	line-height: 30px;
-	color: #000000
+.work-description {
+	width: 660px;
 }
 
-.btn {
+.work-description p {
+	margin: 0;
+	margin-bottom: 40px;	
+}
+
+.work-description-title {
+	display: block;
+	font-size: 45px;
+	line-height: 45px;
+	color: #000;
+	margin-bottom: 35px;
+}
+
+.work-description-caption {
+	margin: 0;
+	margin-bottom: 30px;
+	font-weight: 700;
+	text-transform: uppercase;	
+}
+
+.work-description-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+
+.work-description-list li {
+	margin-bottom: 30px;
+}
+
+.work-description-list li:last-child {
+	margin-bottom: 0;
+}
+
+.work-description-list li::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+	margin-right: 11px;
+}
+
+.description {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0;
+	margin-bottom: 30px;
+	border-top: 2px solid #eee;
+
+}
+
+.achievements {
+	width: 360px;
+}
+
+.achievements-table {
+	border-spacing: 28px;
+	border-collapse: collapse;
+}
+
+.achievements-table th {
+	text-align: left;
+	font-size: 45px;
+	font-weight: 700;
+	padding: 0;
+}
+
+.achievements-table td {
+	padding: 0;
 	line-height: 18px;
-	font-weight: 500;
-	color: #ffffff
+	padding-top: 30px;
+}
+
+.achievements-logo {
+	margin: 0;
+	margin-bottom: 30px;	
+}
+
+.achievements p {
+	margin: 0;
+	margin-bottom: 45px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+.our-works {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	margin-bottom: 80px;
+}
+
+.our-works-item {
+	opacity: 0.2;
+}
+
+.our-works-item:hover {
+	opacity: 1;
+}
+
+.our-works-item:active {
+	opacity: 0.1;
+}
+
+
+
+
+
+
+
+.modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+	background-color: #fff;
+	outline: 1px solid red;
+	width: 760px;
+	padding: 65px 80px;
+	display: none;
+}
+
+.modal-close {
+	position: absolute;
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	right: 70px;
+	top: 75px;
+	background: #000;
+	border: none;
+	cursor: pointer;
+}
+
+.write-us-form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.modal-caption {
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+
+.form-input-title {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000;
+}
+
+.write-us-input {
+	box-sizing: border-box;
+	width: 360px;
+	margin-bottom: 30px;
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+	padding: 13px 14px;
+}
+
+.write-us-input:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.write-us-input:focus {
+	outline: none;
+	border: 2px solid #000;
+}
+
+
+.form-textarea textarea {
+	box-sizing: border-box;
+	width: 760px;
+}
+
+.modal-btn {
+	background-color: #fb565a;
+	border: none;
+	padding: 15px 80px;
+	border-radius: 3px;	
+}
+
+.main-footer-inner {
+	display: flex;
+	align-items: center;
+	padding: 69px 0;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 260px;
+	margin-right: 140px;	
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #e1e1e1;
+	font-size: 0;
+	display: block;
+}
+
+.vk::after {
+	content: "";
+	background: url(../img/vk-icon.svg) no-repeat 50% 50%;
 }
 
 .friendship-bold {
+	margin: 0;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
 }
 
+
 .friendship p {
+	margin-bottom: 0;
 	line-height: 22px;
 	color: #444444;
+	
 }
 
-.modal-caption {
-	font-size: 45px;
-	line-height: 45px
-}
 
 .write-us-form label {
 	line-height: 18px
@@ -117,5 +425,4 @@ a {
 .filter-option label:hover {
 	color: #000;
 }
-
 
