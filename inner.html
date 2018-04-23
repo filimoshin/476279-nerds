@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header inner-header">
 		<div class="wrapper">
-			<nav class="main-navigation">
-				<a href="index.html" class="logo">
-					<img src="img/nerds-logo.svg" alt="Логотип Нердс">
+			<nav class="main-navigation inner-navigation">
+				<a href="index.html" class="logo">								
+					<img src="img/nerds-logo.svg" alt="Логотип Нердс">					
 				</a>
 				<ul class="user-navigation">
 					<li><a href="#">Студия</a></li>
@@ -84,6 +84,15 @@
 					<h2 class="visually-hidden">Пример шаблонов</h2>
 					<div class="sorting">
 						<p>Сортировать:</p>
+						<div class="sorting-type">
+							<ul class="sorting-type-item">
+								<li>По цене</li>
+								<li>По типу</li>
+								<li>По названию</li>
+							</ul>						
+							<a href="#" class="sorting-down">вниз</a>
+							<a href="#" class="sorting-up">вверх</a>
+						</div>
 					</div>
 					<article class="templates-item">
 						<div class="templates-head"></div>
@@ -139,10 +148,18 @@
 							<button class="btn templates-btn">9 900 руб.</button>
 						</div>
 					</article>
+					<div class="pagination">
+						<a href="" class="pagination-item">1</a>
+						<a href="" class="pagination-item">2</a>
+						<a href="" class="pagination-item">3</a>
+						<a href="" class="pagination-item pagination-btn">следующая</a>
+					</div>
 				</section>
 			</div>
 		</div>
-		<div class="map"></div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6126046376555!2d30.32124663771468!3d59.93857018080859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522502063425" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="wrapper">
